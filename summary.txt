@@ -1,0 +1,24 @@
+es6  
+  const map=new Map();  map.set("key",value) map.get("key")  map.has("key") map.delete("key:)
+	Map()接受一个二位数组；例：var m=new Map([["key",80],["key1",79],...)
+  const s =new Set([1,2,4,5,6]) s.add(8) s.delete(1) 
+	set对数组去重，字符串和数字值相同时，都会保留，例：3和"3",
+  循环的方法：
+  for(let i;;)   for(let name in obj)  for(let name of arr) 
+  arr.forEach(function(element,index,arr){})
+  结构赋值：
+  将数组或者对象里面的值赋值给定义的变量，但是赋值时要用数组和对象相应的结构
+  用数组赋值：  
+  var [x,y,z]=[1,2,3] 意思是把1,2,3分别赋值给变量x,y,z
+  var {x,y,z}={x:1,y:2,z:3}  意思是把对象里面相应的属性值赋值给变量x,y,z
+  特殊情况
+  var {name,id}={name:"小明",pid:123345,age:23}变量名和属性名对应不起来,需要把pid赋值给id
+  解决办法 var {name,pid:id}={name:"小明",pid:123345,age:23}就把pid值赋值给了id
+  当变量已经提前申明 var x,y 后面要结构赋值{x,y}={x:1,y:2} 会报错 
+   解决办法：（{x,y}={x:1,y:2}）用括号括起来
+  函数参数的结构赋值 function({x,y,z,}){}  function({x:1,y:2,z:3,f:4}){}
+
+
+
+
+
