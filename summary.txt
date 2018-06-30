@@ -18,7 +18,12 @@ es6
    解决办法：（{x,y}={x:1,y:2}）用括号括起来
   函数参数的结构赋值 function({x,y,z,}){}  function({x:1,y:2,z:3,f:4}){}
 
-
-
+  export 和export default 
+  导出export {name,name1,name2}  导入 import {name,name1,name2} 导出的名和导入的名必须一一对应
+  export default function getdata(){} 导入 import getdata from 
+  exports 和module.exports commonjs语法
+  exports 是module.exports的一个引用，两个的地址值是一样的，所以exports.name=getdata
+  module.exports=getdata
+  导入require（url）
 
 
