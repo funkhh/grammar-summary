@@ -1,0 +1,3 @@
+ const timer=window.requestAnimationFrame(fn) 帧数动画，接受一个函数,之调用一次，需要根据判断条件进行多次调用
+ window.cancelAnimationFrame(timer) 用于取消当前动画
+ window.location.hash='#value' value为id值或者a标签的name属性

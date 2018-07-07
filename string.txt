@@ -1,0 +1,23 @@
+﻿ES6 string新增的方法
+
+1.includes "good".includes("oo") 返回true||false
+2.for..of 遍历字符串
+3.at方法 返回给定位置的字符 charAt不能识别大点的字符串 "abc".at（0） //a
+4.startsWith() endsWith() "abc".startsWith("a")  //true
+
+
+ES6 function新增特性
+1.::双冒号运算符 将对象的this属性绑定给函数，左边是对象右边是方法 例：const obj={}  const fn=function(){}, obj::fn
+  ::obj.fn 意思是将刚对象的方法绑定给该对象，左边符号省略了
+
+ES6 Array的新增特性
+1. 扩展运算符（...） 目的是将一个数组转换成用逗号分隔的序列，主要用于函数调用上 function fn(num1,num2){}  fn(...[1,2,3]) 数组的值赋值给参数
+2.Array.from()用于将对象或者类对象的值转化为数组(取出他们的value值) obj={name:1,age:20,sex:"nan"}
+   const newarr=Array.from(obj) //[1,20,"nan"]
+
+ES6 Object 的特性
+ Object.is(value1,value2)  //true||false
+ Object.assign(target,value1,value2) 用于合并对象，把原对象的所有可枚举属性复制到目标对象
+ Object.keys(obj) // 返回对象的所有键名
+ Object.values(obj) //返回所有对象的值
+ Object.entries(obj) //返回对象的键值对数组
