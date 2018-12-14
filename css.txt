@@ -1,0 +1,13 @@
+使用rem佈局時，儅字體小於12px時系統的字體統一按照12px處理，
+ 加入此時根據計算的到的html的字體大小是10px，div{width:10rem,height:8rem} 按理來説應該
+ 分別是100px和80px,而實際計算得到的是120px和96px，出現佈局混亂，
+ 解決辦法是將Html的字體大小放大html{625%} 此時系統的字體大小為100px; 大於12px,所以根據跟字體計算大小
+ 得到的最終大小是合適的 div{width：1rem,height:0.8rem}  1rem=100px;而不是先前的1rem=10px 按12px處理
+ 
+ 關於三個定寬盒子的剩餘空間的平均分佈
+ 給這三個盒子分別包裹一個父盒子，中間的父盒子寬度為50%；兩邊的分別是25%；然後這三個滋賀子分別右對齊
+ 劇中，右對齊
+
+ 等比例縮放
+ div{ width:0px; height:0px; padding-left:20%;padding-bottom:20%;} padding是根據父盒子的寬度計算大
+ 小的，根據此特性實現等比例縮放
